@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:id="@+id/background"
+        android:src="@drawable/back5" />
+    <EditText
+        android:id="@+id/inputSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_corner"
+        android:drawableRight="@android:drawable/ic_search_category_default"
+        android:hint="Looking for something?" />
+
+    <com.robosoft.archanakumari.uisantapojects.RoundedImageVIew
+        android:id="@+id/one"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/onebusinessman" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputSearch"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/one"
+        android:text="Tom Hanks"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/place"
+        android:layout_width="30dp"
+        android:layout_height="30dp "
+        android:layout_below="@id/heading"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/one"
+        android:src="@drawable/ic_place_white_18dp" />
+
+    <TextView
+        android:id="@+id/subheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5sp"
+        android:layout_toRightOf="@id/place"
+        android:text="Santa Monika. CA"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/place"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@id/one"
+        android:text="A very inspiring project:bit.ty/627137"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clock"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/heading"
+        android:layout_below="@id/inputSearch"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="80dp"
+        android:src="@drawable/clock_24"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/background"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
